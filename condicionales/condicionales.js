@@ -70,6 +70,14 @@ let persona2 ={
  }
    
 /* Ejercicio N°6 */
+
+let edad = prompt("Ingrese edad")
+let altura = prompt("Ingrese altura")
+let vision = prompt("Ingrese su vision del 1 al 10")
+
+if(edad >= 18 && altura > 150 && vision >=8 ){
+    alert("Estas capacitado para conducir")
+} else(alert("No estas capacitado para conducir"))
 /* Ejercicio N°7 */
 /* Ejercicio N°8 */
 /* Ejercicio N°9 */

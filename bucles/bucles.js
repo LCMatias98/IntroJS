@@ -6,7 +6,8 @@ for(i =1; i<= 10; i++ ){
 
 
 /* Ejercicio N°2 */
-let numero = parseInt(prompt("Ingrese numero"))
+
+/* let numero = parseInt(prompt("Ingrese numero"))
 let numerosIngresados = []
 
 
@@ -20,12 +21,12 @@ while(numero){
 
 
 console.log(numero)
-console.log(numerosIngresados)
+console.log(numerosIngresados) */
 
 
 /* Ejercicio 3 */
 
-let numeroGuardado = numerosIngresados.slice(numerosIngresados.length-1)
+/* let numeroGuardado = numerosIngresados.slice(numerosIngresados.length-1)
 
 console.log(numeroGuardado)
 
@@ -43,4 +44,31 @@ while(bucle){
     else if(numeroAdivinado > numeroGuardado[0]){
         numeroAdivinado = prompt(`El numero es mayor, intente otro numero`)
     }
+} */
+/* 
+Ejercicio 4 y 5  */
+
+let numeroIngresado = parseInt(prompt("ingrese un numero para encontrar sus primos"))
+let numerosPrimos = []
+
+for(let i=0; i <= numeroIngresado; i++){
+
+    if(numeroIngresado % i == 0){
+        numerosPrimos.push(i);
+
+    }
+
 }
+
+for (let i = 0; i < numerosPrimos.length; i++) {
+    console.log(numerosPrimos[i])
+
+}
+
+if (numerosPrimos.length > 2){
+    console.log(`el numero no es primo`)
+} else {
+    console.log(`el numero es primo`)
+}
+
+console.log(numerosPrimos)
